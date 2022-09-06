@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --preto: #0A0808;
+    --titulo: 'Playfair Display', serif;
+    --corpo: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--preto);
+    font-family: var(--corpo);
+    color: #fff;
+    overflow-y: hidden;
+}
+
+/* ---------- Starts Header ---------- */
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header #playing {
+    position: absolute;
+    width: 400px;
+    opacity: 0.3;
+    z-index: -2;
+}
+
+#playing img {
+    width: 400px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+nav a {
+    font-family: var(--corpo);
+    font-weight: 600;
+    color: #fff;
+    padding: 0 20px;
+}
+/* ---------- Finishes Header ---------- */
+
+/* ---------- Starts Section ---------- */
+section {
+    max-width: 1200px;
+    height: 100vh;
+    margin: auto;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+section .text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 300px;
+}
+
+section .text-info h1 {
+    font: 900 2.5em var(--titulo);
+    margin-bottom: 30px;
+}
+
+section .text-info p {
+    font: 400 1em var(--corpo);
+    line-height: 1.8em;
+}
+
+section .social-symbols {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5em;
+    height: 300px;
+}
+
+section .social-symbols .links {
+    margin-top: 40px;
+}
+
+section .social-symbols .links a {
+    padding: 5px;
+    color: #fff;
+}
+
+section .social-symbols .links a i {
+    font-size: 1.3em;
+}
+
+section img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 10px 10px 50px #00000054;
+}
+/* ---------- Finishes Section ---------- */
+
+
+
+/* ---------- Starts Footer ---------- */
+footer {
+    position: relative;
+}
+
+footer #god {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+footer #god img {
+    width: 400px;
+}
+/* ---------- Finishes Footer ---------- */
+
+
+@media screen and (max-width: 800px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+}

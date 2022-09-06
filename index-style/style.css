@@ -1,0 +1,588 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --preto: #0A0808;
+    --rosaesc: #9D2D3C;
+    --rosaclaro: #E1A9A3;
+    --bege1: #813300;
+    --bege2: #8F3900;
+    --titulo: 'Playfair Display', serif;
+    --corpo: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    list-style-position: inside;
+    line-height: 1.8em;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--preto);
+    font-family: var(--corpo);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ---------- Starts Header ---------- */
+header {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    position: relative;
+}
+
+header #bola {
+    width: 300px;
+    height: 300px;
+    background-color: var(--rosaesc);
+    border-radius: 50%;
+    z-index: -3;
+    position: absolute;
+    top: 500px;
+    left: -90px;
+    opacity: .5;
+    filter: blur(100px);
+}
+
+header #bola01 {
+    width: 300px;
+    height: 300px;
+    background-color: #7d28cc;
+    border-radius: 50%;
+    z-index: -3;
+    position: absolute;
+    top: -90px;
+    right: 0;
+    opacity: .8;
+    filter: blur(100px);
+}
+
+header #playing {
+    position: absolute;
+    width: 600px;
+    opacity: 0.5;
+    z-index: -2;
+}
+
+#playing img {
+    width: 600px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    height: 700px;
+}
+
+.main-header #polyphia1 {
+    margin: auto;
+    max-width: 400px;
+    border-radius: 45% 45% 2px 2px;
+    box-shadow: 10px 10px 20px #00000071;
+    filter: brightness(80%);
+}
+
+.main-header h1 {
+    position: relative;
+    top: -160px;
+    text-align: center;
+    padding: 30px;
+    color: var(--bege2);
+    font: italic 900 50px var(--titulo);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+nav a {
+    font-family: var(--corpo);
+    font-weight: 600;
+    color: #fff;
+    padding: 0 20px;
+}
+
+nav a:hover {
+    transition: 2s border;
+    border-bottom: 1px solid #fff;
+}
+
+header .header-streamings {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background-color: var(--rosaclaro);
+    height: 100px;
+}
+
+header .streamings {
+    color: black;
+    font: 700 17px var(--corpo);
+}
+
+header i {
+    font-size: 22px;
+}
+
+/* ---------- Finishes Header ---------- */
+
+/* ---------- Starts About ---------- */
+.about {
+    max-width: 1200px;
+    height: 700px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.about .text {
+    width: 40%;
+}
+
+.about .text > h1 {
+    font: italic 900 50px var(--titulo);
+    margin-bottom: 40px;
+}
+
+.about .text p {
+    font-size: 18px;
+}
+
+.about img {
+    width: 450px;
+    border-radius: 20% 10px 20% 20%;
+    box-shadow: 10px 10px 20px #00000071;
+}
+/* ---------- Finishes About ---------- */
+
+/* ---------- Starts Influency ---------- */
+.influency {
+    height: 800px;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.influency img {
+    height: 450px;
+    border-radius: 35% 35% 5px 5px;
+    box-shadow: 10px 10px 20px #00000063;
+    filter: brightness(75%);
+}
+
+.influency #influency-text {
+    position: absolute;
+    max-width: 700px;
+    padding: 20px;
+}
+
+.influency #influency-text p {
+    font: 500 18px var(--corpo);
+    line-height: 1.8em;
+}
+
+.influency #influency-text h1 {
+    font: 900 30px var(--titulo);
+    line-height: 1.8em;
+}
+/* ---------- Finishes Influency ---------- */
+
+/* ---------- Starts Style ---------- */
+.style {
+    max-width: 1200px;
+    height: 700px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.style .text {
+    width: 40%;
+}
+
+.style .text > h1 {
+    font: italic 900 50px var(--titulo);
+    margin-bottom: 40px;
+}
+
+.style .text p {
+    font-size: 18px;
+}
+
+.style img {
+    width: 470px;
+    border-radius: 20% 5px;
+}
+/* ---------- Finishes Style ---------- */
+
+/* ---------- Starts Discography ---------- */
+.discography {
+    position: relative;
+    max-width: 1200px;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.discography h1 {
+    font: 900 55px var(--titulo);
+}
+
+.swiper-container {
+    width: 1200px;
+    padding: 50px 20px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+}
+
+.swiper-slide .swiper-slide-shadow-left,
+.swiper-slide .swiper-slide-shadow-right {
+    background: none;
+}
+
+.albun-content {
+    position: relative;
+    width: 100%;
+}
+
+.albun-content img {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.albun-content .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.albun-content .title h1 {
+    font: 900 40px var(--titulo);
+    text-align: center;
+}
+
+.albun-content .title h2 {
+    font: 500 25px var(--titulo);
+}
+
+.discography .swiper-button-prev,
+.discography .swiper-button-next {
+    color: #fff;
+    background-color: black;
+    border: 2px solid #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.discography .swiper-button-next::after,
+.discography .swiper-button-prev::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-weight: 800;
+    font-size: 25px;
+}
+/* ---------- Finishes Discography ---------- */
+
+/* ---------- Starts Videoclipes ---------- */
+.videoclipes {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.videoclipes h1 {
+    max-width: 1200px;
+    margin: auto;
+    font: 900 50px var(--titulo);
+    text-align: center;
+}
+
+.videoclipes .videos {
+    position: relative;
+    height: 550px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.videoclipes .videos > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+/* ---------- Finishes Videoclipes ---------- */
+
+/* ---------- Starts Members ---------- */
+.members {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.members #title {
+    font: 900 50px var(--titulo);
+    text-align: center;
+    margin: 50px 0;
+}
+
+.members .member{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.members .name {
+    text-align: center;
+}
+
+.members .name h1 {
+    font: 900 50px var(--titulo);
+}
+
+.members .name h2 {
+    font: 600 35px var(--titulo);
+}
+
+.members .member img {
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px #00000077;
+}
+
+.members #first,
+.members #second {
+    flex-direction: row-reverse;
+}
+/* ---------- Finishes Members ---------- */
+
+/* ---------- Starts Social ---------- */
+.social {
+    max-width: 1200px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.social .title-text h1 {
+    font: 900 50px var(--titulo);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social a {
+    color: #fff;
+    font: 600 1.2em var(--corpo);
+    margin-bottom: 30px;
+}
+
+.social i {
+    font-size: 22px;
+}
+/* ---------- Finishes Social ---------- */
+
+/* ---------- Starts Footer ---------- */
+footer {
+    position: relative;
+    height: 300px;
+    background-color: var(--rosaclaro);
+    color: var(--preto);
+    text-align: center;
+    z-index: -2;
+    border-radius: 30px 30px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h2 {
+    font: 800 30px var(--titulo);
+}
+
+footer a {
+    padding: 20px;
+    color: var(--preto);
+    font-weight: 700;
+}
+
+footer p {
+    position: absolute;
+    bottom: 15px;
+    text-align: center;
+    font: 600 1em var(--corpo);
+}
+
+footer #god {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 600px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+footer #god img {
+    width: 600px;
+}
+/* ---------- Finishes Footer ---------- */
+
+
+
+/* ---------- Starts Media Queries ---------- */
+
+@media screen and (max-width: 950px) {
+/* ---------- Starts Members ---------- */
+.members .member {
+    padding: 30px;
+}
+/* ---------- Finishes Members ---------- */
+}
+
+@media screen and (max-width: 850px) {
+    
+/* ---------- Starts Header ---------- */
+header .main-header h1 {
+    font-size: 42px;
+}
+
+#playing img {
+    width: 500px;
+}
+/* ---------- Finishes header ---------- */
+
+/* ---------- Starts About ---------- */
+.about {
+    height: 1000px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+.about img {
+    width: 400px;
+}
+
+.about .text {
+    width: 100%;
+}
+/* ---------- Finishes About ---------- */
+
+/* ---------- Starts Influency ---------- */
+.influency img {
+    height: 300px;
+}
+
+.influency #influency-text p {
+    font-size: 16px;
+}
+
+.influency #influency-text h1 {
+    font-size: 25px;
+}
+/* ---------- Finishes Influency ---------- */
+
+/* ---------- Starts Style ---------- */
+.style {
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.style img {
+    width: 410px;
+}
+
+.style .text {
+    width: 100%;
+}
+/* ---------- Finishes Style ---------- */
+
+/* ---------- Starts Discography ---------- */
+.swiper-container {
+    overflow-x: hidden;
+}
+
+.albun-content .title h1 {
+    font: 900 35px var(--titulo);
+    text-align: center;
+}
+
+
+.discography .swiper-button-prev,
+.discography .swiper-button-next {
+    display: none;
+}
+/* ---------- Finishes Discography ---------- */
+
+/* ---------- Starts Members ---------- */
+.members .member,
+.members #first,
+.members #second {
+    display: flex;
+    flex-direction: column;
+}
+
+.members .member img {
+    width: 350px;
+}
+
+.members .member .name h1 {
+    font: 900 40px var(--titulo);
+}
+/* ---------- Finishes Members ---------- */
+}

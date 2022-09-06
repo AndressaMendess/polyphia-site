@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --preto: #0A0808;
+    --titulo: 'Playfair Display', serif;
+    --corpo: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-position: inside;
+    line-height: 1.8em;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--preto);
+    font-family: var(--corpo);
+    color: #fff;
+    overflow-y: hidden;
+}
+
+/* ---------- Starts Header ---------- */
+header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header #playing {
+    position: absolute;
+    width: 400px;
+    opacity: 0.3;
+    z-index: -2;
+}
+
+#playing img {
+    width: 400px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+nav a {
+    font-family: var(--corpo);
+    font-weight: 600;
+    color: #fff;
+    padding: 0 20px;
+}
+/* ---------- Finishes Header ---------- */
+
+
+/* ---------- Starts Section ---------- */
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+}
+
+section h1 {
+    font: 900 2.3em var(--titulo);
+}
+
+section ul {
+    margin: 50px 0;
+}
+
+section ul li {
+    margin: 50px 0;
+    font: 600 1em var(--corpo);
+}
+
+section ul li a {
+    color: #fff;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+section ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+/* ---------- Finishes Section ---------- */
+
+/* ---------- Starts Footer ---------- */
+footer {
+    position: relative;
+}
+
+footer #god {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 400px;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+footer #god img {
+    width: 400px;
+}
+/* ---------- Finishes Footer ---------- */
