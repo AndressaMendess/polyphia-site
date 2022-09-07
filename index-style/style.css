@@ -263,8 +263,8 @@ header .header-streamings .streamings i {
 }
 
 .swiper-container {
-    width: 1200px;
-    padding: 50px 20px;
+    max-width: 1200px;
+    padding: 50px;
 }
 
 .swiper-slide {
@@ -554,7 +554,7 @@ header .main-header h1 {
 /* ---------- Finishes Style ---------- */
 
 /* ---------- Starts Discography ---------- */
-.swiper-container {
+.discography .swiper-container {
     overflow-x: hidden;
 }
 
