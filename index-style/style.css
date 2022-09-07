@@ -6,7 +6,6 @@
 
 :root {
     --preto: #0A0808;
-    --rosaesc: #9D2D3C;
     --rosaclaro: #E1A9A3;
     --bege1: #813300;
     --bege2: #8F3900;
@@ -46,7 +45,7 @@ header {
 header #bola {
     width: 300px;
     height: 300px;
-    background-color: var(--rosaesc);
+    background-color: #9D2D3C;
     border-radius: 50%;
     z-index: -3;
     position: absolute;
@@ -85,6 +84,7 @@ header #playing {
     flex-direction: column;
     justify-content: center; 
     height: 700px;
+    padding: 30px;
 }
 
 .main-header #polyphia1 {
@@ -170,7 +170,7 @@ header .header-streamings .streamings i {
 }
 
 .about img {
-    width: 450px;
+    width: 40%;
     border-radius: 20% 10px 20% 20%;
     box-shadow: 10px 10px 20px #00000071;
 }
@@ -180,6 +180,7 @@ header .header-streamings .streamings i {
 .influency {
     max-width: 1200px;
     height: 800px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -239,7 +240,7 @@ header .header-streamings .streamings i {
 }
 
 .style img {
-    width: 470px;
+    width: 40%;
     border-radius: 20% 5px;
 }
 /* ---------- Finishes Style ---------- */
@@ -375,7 +376,6 @@ header .header-streamings .streamings i {
 }
 
 .members .member{
-    width: 900px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -545,7 +545,7 @@ header .main-header h1 {
 }
 
 .style img {
-    width: 410px;
+    width: 400px;
 }
 
 .style .text {
@@ -586,4 +586,55 @@ header .main-header h1 {
     font: 900 40px var(--titulo);
 }
 /* ---------- Finishes Members ---------- */
+}
+
+@media screen and (max-width: 450px) {
+
+    header .main-header #polyphia1 {
+        width: 300px;
+    }
+
+    header .header-streamings {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 200px;
+        padding: 20px;
+    }
+
+
+    .about img {
+        width: 100%;
+    }
+
+    .influency img {
+        height: 290px;
+    }
+
+    .style img {
+        width: 100%;
+    }
+
+    .discography .swiper-slide .albun-content img {
+        width: 350px;
+    }
+    
+
+    .videoclipes .videos {
+        height: 400px;
+    }
+
+
+    .members .member img {
+        width: 300px;
+    }
+
+    .members .member .name h1 {
+        font: 900 35px var(--titulo);
+    }
+
+    .members .member .name h2 {
+        font: 600 30px var(--titulo);
+    }
+
+
 }
