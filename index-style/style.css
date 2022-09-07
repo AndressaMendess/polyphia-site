@@ -594,9 +594,10 @@ footer #god img {
 
 @media screen and (max-width: 450px) {
 
-    header .main-header #polyphia1 {
-        width: 300px;
-    }
+/* ---------- Starts Header ---------- */
+header .main-header #polyphia1 {
+    width: 300px;
+}
 
     header .header-streamings {
         flex-direction: column;
@@ -604,9 +605,10 @@ footer #god img {
         height: 200px;
         padding: 20px;
     }
+/* ---------- Finishes Header ---------- */
 
-
-    .about img {
+/* ---------- Starts Sections ---------- */
+.about img {
         width: 100%;
     }
 
@@ -626,19 +628,20 @@ footer #god img {
     .videoclipes .videos {
         height: 400px;
     }
-
-
+    
+    
     .members .member img {
         width: 300px;
     }
-
+    
     .members .member .name h1 {
         font: 900 35px var(--titulo);
     }
-
+    
     .members .member .name h2 {
         font: 600 30px var(--titulo);
     }
+/* ---------- Finishes Sections ---------- */
 
     footer h2 {
         font: 800 25px var(--titulo);
