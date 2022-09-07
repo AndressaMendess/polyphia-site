@@ -439,6 +439,7 @@ header .header-streamings .streamings i {
 /* ---------- Starts Footer ---------- */
 footer {
     height: 300px;
+    padding: 30px;
     position: relative;
     background-color: var(--rosaclaro);
     color: var(--preto);
@@ -501,7 +502,7 @@ header .main-header h1 {
 }
 
 #playing img {
-    width: 500px;
+    width: 400px;
 }
 /* ---------- Finishes header ---------- */
 
@@ -586,7 +587,18 @@ header .main-header h1 {
     font: 900 40px var(--titulo);
 }
 /* ---------- Finishes Members ---------- */
+
+/* ---------- Starts Footer ---------- */
+footer #god {
+    width: 400px;
 }
+
+footer #god img {
+    width: 400px;
+}
+/* ---------- Finishes Footer ---------- */
+}
+
 
 @media screen and (max-width: 450px) {
 
@@ -607,7 +619,7 @@ header .main-header h1 {
     }
 
     .influency img {
-        height: 290px;
+        height: 30%;
     }
 
     .style img {
@@ -636,5 +648,8 @@ header .main-header h1 {
         font: 600 30px var(--titulo);
     }
 
+    footer h2 {
+        font: 800 25px var(--titulo);
+    }
 
 }
