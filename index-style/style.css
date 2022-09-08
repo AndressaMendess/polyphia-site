@@ -62,8 +62,8 @@ header #bola01 {
     border-radius: 50%;
     z-index: -3;
     position: absolute;
-    top: -90px;
-    right: 0;
+    top: -120px;
+    right: -150px;
     opacity: .8;
     filter: blur(100px);
 }
@@ -259,7 +259,7 @@ header .header-streamings .streamings i {
     justify-content: center;
     align-items: center;
     margin: auto;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .discography h1 {
@@ -505,8 +505,8 @@ header .main-header h1 {
 nav a {
     display: block;
     position: absolute;
+    top: 60px;
     width: 100%;
-    top: 50px;
     height: 0;
     transition: .6s;
     visibility: hidden;
@@ -519,15 +519,14 @@ nav #menu-mobile {
         justify-content: space-between;
         margin: 8px 20px;
         padding: 10px;
-        align-items: center;
         background: none;
-        border: 1px solid #f5f0ed;
+        border: transparent;
         cursor: pointer;
-        border-radius: 10px;
 }
 
 button .icon {
     display: flex;
+    flex-direction: column;
     width: 20px;
     background-color: #f5f0ed;
     border-top: 1px solid #f5f0ed;
