@@ -20,7 +20,6 @@
     text-decoration: none;
     list-style-type: none;
     list-style-position: inside;
-    line-height: 1.8em;
 }
 
 html {
@@ -32,6 +31,7 @@ body {
     font-family: var(--corpo);
     color: #fff;
     overflow-x: hidden;
+    line-height: 1.8em;
 }
 
 /* ---------- Starts Header ---------- */
@@ -160,7 +160,7 @@ header .header-streamings .streamings i {
     width: 40%;
 }
 
-.about .text > h1 {
+.about .text h1 {
     font: italic 900 50px var(--titulo);
     margin-bottom: 40px;
 }
@@ -181,12 +181,12 @@ header .header-streamings .streamings i {
     max-width: 1200px;
     height: 800px;
     padding: 30px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: auto;
     text-align: center;
 }
 
@@ -259,7 +259,7 @@ header .header-streamings .streamings i {
 }
 
 .discography h1 {
-    font: 900 55px var(--titulo);
+    font: 900 3em var(--titulo);
 }
 
 .swiper-container {
@@ -297,7 +297,7 @@ header .header-streamings .streamings i {
 }
 
 .albun-content .title h1 {
-    font: 900 40px var(--titulo);
+    font: 900 3em var(--titulo);
     text-align: center;
 }
 
@@ -385,6 +385,7 @@ header .header-streamings .streamings i {
 
 .members .name {
     text-align: center;
+    width: 30%;
 }
 
 .members .name h1 {
@@ -420,7 +421,7 @@ header .header-streamings .streamings i {
 }
 
 .social .title-text h1 {
-    font: 900 50px var(--titulo);
+    font: 900 3em var(--titulo);
     text-align: center;
     margin-bottom: 30px;
 }
@@ -551,11 +552,14 @@ header .main-header h1 {
     overflow-x: hidden;
 }
 
-.albun-content .title h1 {
-    font: 900 35px var(--titulo);
-    text-align: center;
+.discography h1 {
+    font: 900 2.5em var(--titulo);
 }
 
+.albun-content .title h1 {
+    font: 900 2.5em var(--titulo);
+    text-align: center;
+}
 
 .discography .swiper-button-prev,
 .discography .swiper-button-next {
@@ -575,10 +579,20 @@ header .main-header h1 {
     width: 350px;
 }
 
+.members .member .name {
+    width: 100%;
+}
+
 .members .member .name h1 {
     font: 900 40px var(--titulo);
 }
 /* ---------- Finishes Members ---------- */
+
+/* ---------- Starts Social ---------- */
+.social .title-text h1 {
+    font: 900 2.5em var(--titulo)
+}
+/* ---------- Finishes Social ---------- */
 
 /* ---------- Starts Footer ---------- */
 footer #god {
@@ -595,9 +609,9 @@ footer #god img {
 @media screen and (max-width: 450px) {
 
 /* ---------- Starts Header ---------- */
-header .main-header #polyphia1 {
+    header .main-header #polyphia1 {
     width: 300px;
-}
+    }
 
     header .header-streamings {
         flex-direction: column;
