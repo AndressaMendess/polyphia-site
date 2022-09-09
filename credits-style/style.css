@@ -46,19 +46,36 @@ header #playing {
 }
 
 nav {
+    height: 80px;
     display: flex;
     flex-direction: row;
-    height: 50px;
     justify-content: center;
     align-items: center;
+    align-content: center;
     padding: 40px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    list-style-type: none;
 }
 
 nav a {
     font-family: var(--corpo);
     font-weight: 600;
     color: #fff;
-    padding: 0 20px;
+    padding: 1rem;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+header #menu-mobile {
+    display: none;
 }
 /* ---------- Finishes Header ---------- */
 
@@ -114,3 +131,50 @@ footer #god img {
     width: 400px;
 }
 /* ---------- Finishes Footer ---------- */
+
+@media screen and (max-width: 600px) {
+    header nav {
+        background-color: #0a0808de;
+    }
+
+    header #menu-mobile {
+        display: block;
+        position: absolute;
+        right: calc(1.5rem - 20px);
+        padding: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    header #menu-mobile i {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    header .menu-desktop {
+        display: none;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: 70px;
+        right: 0;
+        background-color: #0a0808de;
+    }
+    
+    header #second-item {
+        display: none;
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        height: 70px;
+        right: 0;
+        background-color: #0a0808de;
+    }
+
+    #nav.active .menu-desktop, 
+    #nav.active #second-item {
+        display: block;
+        z-index: 2;
+    }
+}
