@@ -93,6 +93,7 @@ header #playing {
     border-radius: 45% 45% 2px 2px;
     box-shadow: 10px 10px 20px #00000071;
     filter: brightness(80%);
+    z-index: -1;
 }
 
 .main-header h1 {
@@ -105,27 +106,34 @@ header #playing {
 }
 
 nav {
-    height: 50px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    align-content: center;
     padding: 40px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 
 nav a {
     font-family: var(--corpo);
     font-weight: 600;
     color: #fff;
-    padding: 0 20px;
+    padding: 1rem;
 }
 
 nav a:hover {
-    transition: 2s border;
     border-bottom: 1px solid #fff;
 }
 
-nav button {
+header #menu-mobile {
     display: none;
 }
 
@@ -501,41 +509,6 @@ header .main-header h1 {
 #playing img {
     width: 400px;
 }
-
-nav a {
-    display: block;
-    position: absolute;
-    top: 60px;
-    width: 100%;
-    height: 0;
-    transition: .6s;
-    visibility: hidden;
-    overflow: hidden;
-}
-
-nav #menu-mobile {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 8px 20px;
-        padding: 10px;
-        background: none;
-        border: transparent;
-        cursor: pointer;
-}
-
-button .icon {
-    display: flex;
-    flex-direction: column;
-    width: 20px;
-    background-color: #f5f0ed;
-    border-top: 1px solid #f5f0ed;
-}
-
-nav.active a {
-    height: 245px;
-    visibility: visible;
-}
 /* ---------- Finishes header ---------- */
 
 /* ---------- Starts About ---------- */
@@ -642,6 +615,52 @@ footer #god img {
     width: 400px;
 }
 /* ---------- Finishes Footer ---------- */
+}
+
+@media screen and (max-width: 600px) {
+    header nav {
+        background-color: #0a080871;
+    }
+
+    header #menu-mobile {
+        display: block;
+        position: absolute;
+        right: calc(1.5rem - 20px);
+        padding: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    header #menu-mobile i {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    header .menu-desktop {
+        display: none;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: 70px;
+        right: 0;
+        background-color: #0a080871;
+    }
+    
+    header #second-item {
+        display: none;
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        height: 70px;
+        right: 0;
+        background-color: #0a080871;
+    }
+
+    #nav.active .menu-desktop, 
+    #nav.active #second-item {
+        display: block;
+    }
 }
 
 
