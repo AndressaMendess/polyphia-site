@@ -17,7 +17,11 @@
     text-decoration: none;
     list-style-position: inside;
     line-height: 1.8em;
+}
+
+html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
