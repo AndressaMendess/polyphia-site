@@ -32,39 +32,62 @@ header {
 }
 
 header #playing {
-    position: absolute;
-    width: 400px;
+    width: 370px;
     opacity: 0.3;
     z-index: -2;
 }
 
 #playing img {
-    width: 400px;
+    width: 370px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header #logo {
+    width: 150px;
 }
 
 nav {
+    height: 80px;
     display: flex;
     flex-direction: row;
-    height: 50px;
     justify-content: center;
     align-items: center;
+    align-content: center;
     padding: 40px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    list-style-type: none;
 }
 
 nav a {
     font-family: var(--corpo);
     font-weight: 600;
     color: #fff;
-    padding: 0 20px;
+    padding: 1rem;
+}
+
+nav a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+header #menu-mobile {
+    display: none;
 }
 /* ---------- Finishes Header ---------- */
 
 /* ---------- Starts Section ---------- */
 section {
     max-width: 1200px;
-    height: 1000px;
-    margin: auto;
     padding: 30px 50px;
+    margin: auto;
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -100,7 +123,7 @@ section .social-symbols .links {
 }
 
 section .social-symbols .links a {
-    padding: 5px;
+    padding: 10px;
     color: #fff;
 }
 
@@ -108,31 +131,30 @@ section .social-symbols .links a i {
     font-size: 1.3em;
 }
 
-section img {
+section img#photo {
     width: 300px;
     border-radius: 50%;
     box-shadow: 10px 10px 50px #00000054;
 }
 /* ---------- Finishes Section ---------- */
 
-
-
 /* ---------- Starts Footer ---------- */
 footer {
+    height: 185px;
     position: relative;
 }
 
 footer #god {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 400px;
+    width: 370px;
     opacity: 0.3;
     z-index: -1;
 }
 
 footer #god img {
-    width: 400px;
+    width: 370px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 /* ---------- Finishes Footer ---------- */
 
@@ -141,5 +163,62 @@ footer #god img {
     section {
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header nav {
+        background-color: #0a0808de;
+    }
+
+    header #menu-mobile {
+        display: block;
+        position: absolute;
+        right: calc(1.5rem - 20px);
+        padding: 20px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    header #menu-mobile i {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+    header .menu-desktop {
+        display: none;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        height: 70px;
+        right: 0;
+        background-color: #0a0808de;
+    }
+    
+    header #second-item {
+        display: none;
+        position: absolute;
+        top: 150px;
+        width: 100%;
+        height: 70px;
+        right: 0;
+        background-color: #0a0808de;
+    }
+
+    #nav.active .menu-desktop, 
+    #nav.active #second-item {
+        display: block;
+        z-index: 2;
+    }
+
+    section .text-info h1 {
+        font-size: 2.2em;
+    }
+
+    footer {
+        height: 4rem;
     }
 }

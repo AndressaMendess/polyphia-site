@@ -13,12 +13,17 @@
         <div id="playing">
             <img src="media/playing.png" alt="Playing God 01" loading="lazy">
         </div>
-        <nav>
-            <a href="credits.html">Créditos</a>
-            <a href="index.html">
-                <img id="logo" src="media/logo1.png" alt="Logo Polyphia" loading="lazy">
-            </a>
-            <a href="contact.html">Contato</a>
+        <nav id="nav">
+            <ul class="menu-desktop">
+                <li><a href="credits.html" target="_self">Créditos</a></li>
+            </ul>
+            <a href="index.html"><img id="logo" src="media/logo1.png" alt="Logo Polyphia" loading="lazy"></a>
+            <ul class="menu-desktop" id="second-item">
+                <li><a href="contact.html">Contato</a></li>
+            </ul>
+            <button id="menu-mobile">
+                <i class="fa-solid fa-bars"></i>
+            </button>
         </nav>
     </header>
     <section>
@@ -27,7 +32,7 @@
             <p>Esse site foi desenvolvido como objeto de estudo. <br> Sou desenvolvedora Front-End e UX/UI Designer <br> Para conhecer mais trabalhos acesse:</p>
         </div>
         <div class="social-symbols">
-            <img src="media/001.jpg" alt="">
+            <img id="photo" src="media/001.jpg" alt="">
             <div class="links">
                 <a href="https://www.instagram.com/mendxsui/"><i class="fa-brands fa-instagram" target="_blank" rel="external"></i></a>
                 <a href="https://www.behance.net/Andressamendess" target="_blank" rel="external"><i class="fa-brands fa-behance"></i></a>
@@ -36,15 +41,15 @@
             </div>
         </div>
     </section>
-
+    
     <footer>
         <div id="god">
             <img src="media/god.png" alt="Playing God 02" loading="lazy">
         </div>
     </footer>
 
-
     <script src="https://kit.fontawesome.com/3f4fa50c6c.js" crossorigin="anonymous">
     </script>
+    <script src="menu-script/script.js"></script>
 </body>
 </html>
