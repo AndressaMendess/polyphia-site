@@ -569,7 +569,7 @@ header .main-header h1 {
     font: 900 2.7em var(--titulo);
 }
 
-.albun-content .title h1 {
+.album-content .title h1 {
     font: 900 2em var(--titulo);
     text-align: center;
 }
@@ -687,15 +687,15 @@ footer #god img {
             height: 40%;
         }
     
-        .discography .swiper-slide .albun-content img {
+        .discography .swiper-slide .album-content img {
             width: 93%;
         }
 
-        .discography .albun-content .title h1 {
+        .discography .album-content .title h1 {
             font-size: 1.8em;
         }
 
-        .discography .albun-content .title h2 {
+        .discography .album-content .title h2 {
             font-size: 1.3em;
         }
     
