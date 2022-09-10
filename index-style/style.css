@@ -32,6 +32,7 @@ body {
     font-family: var(--corpo);
     color: #fff;
     line-height: 1.8em;
+    overflow-x: hidden;
 }
 
 /* ---------- Starts Header ---------- */
