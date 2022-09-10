@@ -142,12 +142,12 @@ section img#photo {
 footer {
     height: 185px;
     position: relative;
+    z-index: -1;
 }
 
 footer #god {
     width: 370px;
     opacity: 0.3;
-    z-index: -1;
 }
 
 footer #god img {
