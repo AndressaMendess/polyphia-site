@@ -31,7 +31,6 @@ body {
     background-color: var(--preto);
     font-family: var(--corpo);
     color: #fff;
-    overflow-x: hidden;
     line-height: 1.8em;
 }
 
@@ -46,14 +45,14 @@ header {
 header #bola {
     width: 300px;
     height: 300px;
-    background-color: #9D2D3C;
-    border-radius: 50%;
-    z-index: -3;
     position: absolute;
     top: 500px;
     left: -90px;
-    opacity: .5;
+    background-color: #9D2D3C;
+    border-radius: 50%;
+    z-index: -3;
     filter: blur(100px);
+    opacity: .5;
 }
 
 header #bola01 {
@@ -88,7 +87,7 @@ header #playing {
     padding: 30px;
 }
 
-.main-header #polyphia1 {
+.main-header img#polyphia1 {
     max-width: 400px;
     margin: auto;
     border-radius: 45% 45% 2px 2px;
@@ -104,7 +103,7 @@ header #playing {
     right: 0;
     padding: 30px;
     color: var(--bege2);
-    font: italic 900 50px var(--titulo);
+    font: italic 900 3em var(--titulo);
     text-align: center;
 }
 
@@ -151,11 +150,11 @@ header .header-streamings {
 
 header .header-streamings .streamings {
     color: black;
-    font: 700 17px var(--corpo);
+    font: 700 1.1em var(--corpo);
 }
 
 header .header-streamings .streamings i {
-    font-size: 22px;
+    font-size: 1.3em;
 }
 /* ---------- Finishes Header ---------- */
 
@@ -262,14 +261,14 @@ header .header-streamings .streamings i {
 
 /* ---------- Starts Discography ---------- */
 .discography {
-    max-width: 1200px;
+    max-width: 1000px;
     height: 1000px;
+    margin: auto;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
     overflow-x: hidden;
 }
 
@@ -293,17 +292,17 @@ header .header-streamings .streamings i {
     background: none;
 }
 
-.albun-content {
+.album-content {
     position: relative;
     width: 100%;
 }
 
-.albun-content img {
+.album-content img {
     width: 100%;
     border-radius: 20px;
 }
 
-.albun-content .title {
+.album-content .title {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,12 +310,12 @@ header .header-streamings .streamings i {
     justify-content: center;
 }
 
-.albun-content .title h1 {
+.album-content .title h1 {
     font: 900 2.5em var(--titulo);
     text-align: center;
 }
 
-.albun-content .title h2 {
+.album-content .title h2 {
     font: 500 1.5em var(--titulo);
 }
 
@@ -379,7 +378,7 @@ header .header-streamings .streamings i {
     padding-top: 5rem;
     margin: auto;
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -494,14 +493,6 @@ footer #god img {
 
 
 /* ---------- Starts Media Queries ---------- */
-
-/* @media screen and (max-width: 950px) {
-
-.members .member {
-    padding: 30px;
-}
-
-}*/
 
 @media screen and (max-width: 850px) {
     
