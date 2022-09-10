@@ -36,10 +36,10 @@ body {
 
 /* ---------- Starts Header ---------- */
 header {
+    height: 1000px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
-    height: 1000px;
 }
 
 header #bola {
@@ -97,8 +97,10 @@ header #playing {
 }
 
 .main-header h1 {
-    position: relative;
-    top: -160px;
+    position: absolute;
+    top: 33rem;
+    left: 0;
+    right: 0;
     padding: 30px;
     color: var(--bege2);
     font: italic 900 50px var(--titulo);
@@ -173,12 +175,12 @@ header .header-streamings .streamings i {
 }
 
 .about .text h1 {
-    font: italic 900 50px var(--titulo);
-    margin-bottom: 40px;
+    font: italic 900 3em var(--titulo);
+    margin-bottom: 3rem;
 }
 
 .about .text p {
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 .about img {
@@ -212,16 +214,16 @@ header .header-streamings .streamings i {
 .influency #influency-text {
     position: absolute;
     max-width: 700px;
-    padding: 20px;
+    padding: .7rem;
 }
 
 .influency #influency-text p {
-    font: 500 18px var(--corpo);
+    font: 500 1.1em var(--corpo);
     line-height: 1.8em;
 }
 
 .influency #influency-text h1 {
-    font: 900 30px var(--titulo);
+    font: 900 1.8em var(--titulo);
     line-height: 1.8em;
 }
 /* ---------- Finishes Influency ---------- */
@@ -242,13 +244,13 @@ header .header-streamings .streamings i {
     width: 40%;
 }
 
-.style .text > h1 {
-    font: italic 900 50px var(--titulo);
-    margin-bottom: 40px;
+.style .text h1 {
+    font: italic 900 3em var(--titulo);
+    margin-bottom: 3rem;
 }
 
 .style .text p {
-    font-size: 18px;
+    font-size: 1.1em;
 }
 
 .style img {
@@ -276,7 +278,7 @@ header .header-streamings .streamings i {
 
 .swiper-container {
     max-width: 1200px;
-    padding: 50px;
+    padding: 2.5rem;
 }
 
 .swiper-slide {
@@ -296,7 +298,7 @@ header .header-streamings .streamings i {
 }
 
 .albun-content img {
-    width: 400px;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -309,23 +311,23 @@ header .header-streamings .streamings i {
 }
 
 .albun-content .title h1 {
-    font: 900 3em var(--titulo);
+    font: 900 2.5em var(--titulo);
     text-align: center;
 }
 
 .albun-content .title h2 {
-    font: 500 25px var(--titulo);
+    font: 500 1.5em var(--titulo);
 }
 
 .discography .swiper-button-prev,
 .discography .swiper-button-next {
-    color: #fff;
-    background-color: black;
+    background-color: #000000d2;
     border: 2px solid #fff;
+    color: #fff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    padding: 30px;
+    padding: 1.8rem;
 }
 
 .discography .swiper-button-next::after,
@@ -335,7 +337,7 @@ header .header-streamings .streamings i {
     justify-content: center;
     align-content: center;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 1.5em;
 }
 /* ---------- Finishes Discography ---------- */
 
@@ -348,15 +350,15 @@ header .header-streamings .streamings i {
 .videoclipes h1 {
     max-width: 1200px;
     margin: auto;
-    font: 900 50px var(--titulo);
+    font: 900 2.8em var(--titulo);
     text-align: center;
 }
 
 .videoclipes .videos {
     position: relative;
     height: 550px;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 30px;
+    margin: 50px 0;
 }
 
 .videoclipes .videos > iframe {
@@ -373,7 +375,7 @@ header .header-streamings .streamings i {
 /* ---------- Starts Members ---------- */
 .members {
     max-width: 1200px;
-    padding-top: 100px;
+    padding-top: 5rem;
     margin: auto;
     display: flex;
     flex-flow: column;
@@ -382,9 +384,9 @@ header .header-streamings .streamings i {
 }
 
 .members #title {
-    font: 900 50px var(--titulo);
+    font: 900 2.7em var(--titulo);
     text-align: center;
-    margin: 50px 0;
+    margin: 2rem 0;
 }
 
 .members .member{
@@ -392,7 +394,7 @@ header .header-streamings .streamings i {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 50px 0;
+    margin: 5rem 0;
 }
 
 .members .name {
@@ -401,15 +403,15 @@ header .header-streamings .streamings i {
 }
 
 .members .name h1 {
-    font: 900 50px var(--titulo);
+    font: 900 3em var(--titulo);
 }
 
 .members .name h2 {
-    font: 600 35px var(--titulo);
+    font: 600 1.8em var(--titulo);
 }
 
 .members .member img {
-    width: 450px;
+    width: 400px;
     border-radius: 20px;
     box-shadow: 10px 10px 20px #00000077;
 }
@@ -452,7 +454,7 @@ header .header-streamings .streamings i {
 /* ---------- Starts Footer ---------- */
 footer {
     height: 300px;
-    padding: 30px;
+    padding: 1.5rem;
     position: relative;
     background-color: var(--rosaclaro);
     color: var(--preto);
@@ -466,7 +468,8 @@ footer {
 }
 
 footer h2 {
-    font: 800 30px var(--titulo);
+    position: absolute;
+    font: 800 2em var(--titulo);
 }
 
 footer p {
@@ -475,35 +478,37 @@ footer p {
 }
 
 footer #god {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 600px;
+    width: 530px;
     opacity: 0.5;
     z-index: -1;
 }
 
 footer #god img {
-    width: 600px;
+    width: 530px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 /* ---------- Finishes Footer ---------- */
 
 
 /* ---------- Starts Media Queries ---------- */
 
-@media screen and (max-width: 950px) {
-/* ---------- Starts Members ---------- */
+/* @media screen and (max-width: 950px) {
+
 .members .member {
     padding: 30px;
 }
-/* ---------- Finishes Members ---------- */
-}
+
+}*/
 
 @media screen and (max-width: 850px) {
     
 /* ---------- Starts Header ---------- */
 header .main-header h1 {
-    font-size: 42px;
+    font-size: 2.5em;
+    text-align: center;
+    top: 30rem;
 }
 
 #playing img {
@@ -520,7 +525,7 @@ header .main-header h1 {
 }
 
 .about img {
-    width: 400px;
+    width: 60%;
 }
 
 .about .text {
@@ -529,29 +534,33 @@ header .main-header h1 {
 /* ---------- Finishes About ---------- */
 
 /* ---------- Starts Influency ---------- */
+.influency {
+    height: 700px;
+}
+
 .influency img {
-    height: 300px;
+    height: 55%;
 }
 
 .influency #influency-text p {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .influency #influency-text h1 {
-    font-size: 25px;
+    font-size: 1.6em;
 }
 /* ---------- Finishes Influency ---------- */
 
 /* ---------- Starts Style ---------- */
 .style {
-    height: 1000px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .style img {
-    width: 400px;
+    width: 60%;
 }
 
 .style .text {
@@ -565,11 +574,11 @@ header .main-header h1 {
 }
 
 .discography h1 {
-    font: 900 2.5em var(--titulo);
+    font: 900 2.7em var(--titulo);
 }
 
 .albun-content .title h1 {
-    font: 900 2.5em var(--titulo);
+    font: 900 2em var(--titulo);
     text-align: center;
 }
 
@@ -596,7 +605,7 @@ header .main-header h1 {
 }
 
 .members .member .name h1 {
-    font: 900 40px var(--titulo);
+    font: 900 2.5em var(--titulo);
 }
 /* ---------- Finishes Members ---------- */
 
@@ -618,6 +627,7 @@ footer #god img {
 }
 
 @media screen and (max-width: 600px) {
+/* ---------- Starts Header ---------- */
     header nav {
         background-color: #0a080871;
     }
@@ -661,62 +671,61 @@ footer #god img {
     #nav.active #second-item {
         display: block;
     }
-}
 
-
-@media screen and (max-width: 450px) {
-
-/* ---------- Starts Header ---------- */
     header .main-header #polyphia1 {
-    width: 300px;
-    }
-
+        width: 100%;
+        margin: 0;
+        }
+    
     header .header-streamings {
         flex-direction: column;
         justify-content: space-between;
         height: 200px;
-        padding: 20px;
+        padding: 1rem;
     }
 /* ---------- Finishes Header ---------- */
-
+    
 /* ---------- Starts Sections ---------- */
-.about img {
-        width: 100%;
-    }
-
-    .influency img {
-        height: 30%;
-    }
-
-    .style img {
-        width: 100%;
-    }
-
-    .discography .swiper-slide .albun-content img {
-        width: 350px;
-    }
+    .about img, .style img {
+            width: 100%;
+        }
     
+        .influency img {
+            height: 40%;
+        }
+    
+        .discography .swiper-slide .albun-content img {
+            width: 93%;
+        }
 
-    .videoclipes .videos {
-        height: 400px;
-    }
-    
-    
-    .members .member img {
-        width: 300px;
-    }
-    
-    .members .member .name h1 {
-        font: 900 35px var(--titulo);
-    }
-    
-    .members .member .name h2 {
-        font: 600 30px var(--titulo);
-    }
-/* ---------- Finishes Sections ---------- */
+        .discography .albun-content .title h1 {
+            font-size: 1.8em;
+        }
 
-    footer h2 {
-        font: 800 25px var(--titulo);
-    }
-
+        .discography .albun-content .title h2 {
+            font-size: 1.3em;
+        }
+    
+        .videoclipes .videos {
+            height: 400px;
+        }
+        
+        .members .member img {
+            width: 300px;
+        }
+        
+        .members .member .name h1 {
+            font: 900 2.2em var(--titulo);
+        }
+        
+        .members .member .name h2 {
+            font: 600 1.8em var(--titulo);
+        }
+    /* ---------- Finishes Sections ---------- */
+    
+        footer h2 {
+            font: 800 1.6em var(--titulo);
+        }
 }
+
+
