@@ -24,6 +24,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -66,7 +67,6 @@ header #bola01 {
     opacity: .8;
     filter: blur(100px);
     z-index: -3;
-    overflow-x: hidden;
 }
 
 header #playing {
