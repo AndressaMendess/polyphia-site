@@ -57,14 +57,14 @@ header #bola {
 }
 
 header #bola01 {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     position: absolute;
-    top: -120px;
-    right: -150px;
+    top: -160px;
+    right: -160px;
     background-color: #7d28cc;
     border-radius: 50%;
-    opacity: .8;
+    opacity: .6;
     filter: blur(100px);
     z-index: -3;
 }
@@ -79,6 +79,7 @@ header #playing {
 #playing img {
     width: 600px;
 }
+
 
 .main-header {
     display: flex;
@@ -125,11 +126,11 @@ nav ul {
     justify-content: center;
 }
 
-nav a {
+nav ul.menu-desktop li a {
     font-family: var(--corpo);
     font-weight: 600;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 100% 1rem 1rem;
 }
 
 nav a:hover {
@@ -622,6 +623,10 @@ footer #god img {
 
 @media screen and (max-width: 600px) {
 /* ---------- Starts Header ---------- */
+    header #logo {
+        width: 150px;
+    } 
+
     header nav {
         background-color: #0a080871;
     }
@@ -685,11 +690,15 @@ footer #god img {
         }
     
         .influency img {
-            height: 40%;
+            height: 35%;
+        }
+
+        .discography .swiper-slide .album-content {
+            text-align: center;
         }
     
         .discography .swiper-slide .album-content img {
-            width: 93%;
+            width: 90%;
         }
 
         .discography .album-content .title h1 {

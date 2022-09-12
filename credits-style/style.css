@@ -73,11 +73,11 @@ nav ul {
     list-style-type: none;
 }
 
-nav a {
+nav ul.menu-desktop li a {
     font-family: var(--corpo);
     font-weight: 600;
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 100% 1rem 1rem;
 }
 
 nav a:hover {
@@ -93,6 +93,7 @@ header #menu-mobile {
 /* ---------- Starts Section ---------- */
 section {
     max-width: 1200px;
+    height: 95vh;
     margin: auto;
     padding: 30px;
     position: relative;
