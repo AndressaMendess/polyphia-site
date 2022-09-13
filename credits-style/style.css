@@ -73,11 +73,11 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul.menu-desktop li a {
+nav a {
     font-family: var(--corpo);
     font-weight: 600;
     color: #fff;
-    padding: 1rem 100% 1rem 1rem;
+    padding: 1rem;
 }
 
 nav a:hover {
@@ -146,6 +146,13 @@ footer #god img {
 @media screen and (max-width: 600px) {
     header nav {
         background-color: #0a0808de;
+    }
+
+    nav ul.menu-desktop li a {
+        font-family: var(--corpo);
+        font-weight: 600;
+        color: #fff;
+        padding: 1rem 100% 1rem 1rem;
     }
 
     header #menu-mobile {

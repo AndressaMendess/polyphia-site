@@ -126,11 +126,11 @@ nav ul {
     justify-content: center;
 }
 
-nav ul.menu-desktop li a {
+nav a {
     font-family: var(--corpo);
     font-weight: 600;
     color: #fff;
-    padding: 1rem 100% 1rem 1rem;
+    padding: 1rem;
 }
 
 nav a:hover {
@@ -625,10 +625,17 @@ footer #god img {
 /* ---------- Starts Header ---------- */
     header #logo {
         width: 150px;
-    } 
+    }
 
     header nav {
         background-color: #0a080871;
+    }
+
+    nav ul.menu-desktop li a {
+        font-family: var(--corpo);
+        font-weight: 600;
+        color: #fff;
+        padding: 1rem 100% 1rem 1rem;
     }
 
     header #menu-mobile {
