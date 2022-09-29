@@ -37,21 +37,24 @@ body {
 
 /* ---------- Starts Header ---------- */
 header {
-    height: 1000px;
+    width: 100vw;
+    height: auto;
     position: relative;
     display: flex;
     flex-direction: column;
+    background: var(--preto) url(../media/banner.jpg) no-repeat center center;
+    background-size: cover;
+    backdrop-filter: brightness(50%);
 }
 
 header #bola {
     width: 300px;
     height: 300px;
     position: absolute;
-    top: 500px;
+    top: 20rem;
     left: -90px;
     background-color: #9D2D3C;
     border-radius: 50%;
-    z-index: -3;
     filter: blur(100px);
     opacity: .5;
 }
@@ -66,43 +69,28 @@ header #bola01 {
     border-radius: 50%;
     opacity: .6;
     filter: blur(100px);
-    z-index: -3;
 }
 
 header #playing {
-    width: 600px;
+    width: 400px;
     position: absolute;
     opacity: 0.5;
-    z-index: -2;
+    z-index: -3;
 }
 
 #playing img {
-    width: 600px;
+    width: 400px;
 }
-
 
 .main-header {
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    height: 700px;
+    height: 500px;
     padding: 30px;
 }
 
-.main-header img#polyphia1 {
-    max-width: 400px;
-    margin: auto;
-    border-radius: 45% 45% 2px 2px;
-    box-shadow: 10px 10px 20px #00000071;
-    filter: brightness(80%);
-    z-index: -1;
-}
-
 .main-header h1 {
-    position: absolute;
-    top: 33rem;
-    left: 0;
-    right: 0;
     padding: 30px;
     color: var(--bege2);
     font: italic 900 3em var(--titulo);
@@ -499,6 +487,7 @@ footer #god img {
 @media screen and (max-width: 850px) {
     
 /* ---------- Starts Header ---------- */
+
 header .main-header h1 {
     font-size: 2.5em;
     text-align: center;
@@ -623,21 +612,19 @@ footer #god img {
 
 @media screen and (max-width: 600px) {
 /* ---------- Starts Header ---------- */
+header {
+    background: var(--preto) url(../media/banner2.jpg) no-repeat top center;
+}
+
     header #logo {
         width: 150px;
     }
 
     header nav {
-        background-color: #0a080871;
+        background-color: #0a0808bb;
     }
 
-    nav ul.menu-desktop li a {
-        font-family: var(--corpo);
-        font-weight: 600;
-        color: #fff;
-        padding: 1rem 100% 1rem 1rem;
-    }
-
+    
     header #menu-mobile {
         display: block;
         position: absolute;
@@ -652,7 +639,7 @@ footer #god img {
         font-size: 1.5rem;
         color: #fff;
     }
-
+    
     header .menu-desktop {
         display: none;
         position: absolute;
@@ -660,7 +647,7 @@ footer #god img {
         width: 100%;
         height: 70px;
         right: 0;
-        background-color: #0a080871;
+        background-color: #0a0808bb;
     }
     
     header #second-item {
@@ -670,18 +657,24 @@ footer #god img {
         width: 100%;
         height: 70px;
         right: 0;
-        background-color: #0a080871;
+        background-color: #0a0808bb;
+    }
+    
+    nav #menu-desktop ul li {
+        padding: 1rem 0;
+    }
+
+    nav ul.menu-desktop li a {
+        font-family: var(--corpo);
+        font-weight: 600;
+        color: #fff;
+        padding: 1rem 100% 1rem 1rem;
     }
 
     #nav.active .menu-desktop, 
     #nav.active #second-item {
         display: block;
     }
-
-    header .main-header #polyphia1 {
-        width: 100%;
-        margin: 0;
-        }
     
     header .header-streamings {
         flex-direction: column;
