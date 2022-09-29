@@ -42,7 +42,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: var(--preto) url(../media/banner.jpg) no-repeat center center;
+    background: var(--preto) url(../media/banner.png) no-repeat center center;
     background-size: cover;
     backdrop-filter: brightness(50%);
 }
@@ -57,6 +57,7 @@ header #bola {
     border-radius: 50%;
     filter: blur(100px);
     opacity: .5;
+    z-index: -2;
 }
 
 header #bola01 {
@@ -69,17 +70,7 @@ header #bola01 {
     border-radius: 50%;
     opacity: .6;
     filter: blur(100px);
-}
-
-header #playing {
-    width: 400px;
-    position: absolute;
-    opacity: 0.5;
-    z-index: -3;
-}
-
-#playing img {
-    width: 400px;
+    z-index: -2;
 }
 
 .main-header {
@@ -92,7 +83,7 @@ header #playing {
 
 .main-header h1 {
     padding: 30px;
-    color: var(--bege2);
+    color: var(--rosaclaro);
     font: italic 900 3em var(--titulo);
     text-align: center;
 }
@@ -487,15 +478,9 @@ footer #god img {
 @media screen and (max-width: 850px) {
     
 /* ---------- Starts Header ---------- */
-
 header .main-header h1 {
     font-size: 2.5em;
     text-align: center;
-    top: 30rem;
-}
-
-#playing img {
-    width: 400px;
 }
 /* ---------- Finishes header ---------- */
 
@@ -613,7 +598,7 @@ footer #god img {
 @media screen and (max-width: 600px) {
 /* ---------- Starts Header ---------- */
 header {
-    background: var(--preto) url(../media/banner2.jpg) no-repeat top center;
+    background: var(--preto) url(../media/banner2.png) no-repeat top center;
 }
 
     header #logo {
