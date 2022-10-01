@@ -15,6 +15,26 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scrollbar-width: 12px;
+    scrollbar-color: var(--preto) #e1a9a3;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--preto);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #e1a9a3;
+    border-right: 2px solid var(--preto);
+}
+
+::selection {
+    color: var(--preto);
+    background-color: #e1a9a3;
 }
 
 html {

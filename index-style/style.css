@@ -20,6 +20,26 @@
     text-decoration: none;
     list-style-type: none;
     list-style-position: inside;
+    scrollbar-width: 12px;
+    scrollbar-color: var(--preto) var(--rosaclaro);
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--preto);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--rosaclaro);
+    border-right: 2px solid var(--preto);
+}
+
+::selection {
+    color: var(--preto);
+    background-color: var(--rosaclaro);
 }
 
 html {
@@ -303,12 +323,17 @@ header .header-streamings .streamings i {
 .discography .swiper-button-prev,
 .discography .swiper-button-next {
     background-color: #000000d2;
-    border: 2px solid #fff;
     color: #fff;
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    padding: 1.8rem;
+    padding: 2rem;
+}
+
+.discography .swiper-button-prev:hover,
+.discography .swiper-button-next:hover {
+    background-color: #e1a9a3b0;
+    color: var(--preto);
 }
 
 .discography .swiper-button-next::after,
@@ -318,7 +343,7 @@ header .header-streamings .streamings i {
     justify-content: center;
     align-content: center;
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 1.6em;
 }
 /* ---------- Finishes Discography ---------- */
 
