@@ -62,7 +62,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: var(--preto) url(../media/banner.png) no-repeat center center;
+    background: var(--preto) url(../media2/banner.png) no-repeat center center;
     background-size: cover;
     backdrop-filter: brightness(50%);
 }
@@ -624,7 +624,7 @@ footer #god img {
 @media screen and (max-width: 600px) {
 /* ---------- Starts Header ---------- */
 header {
-    background: var(--preto) url(../media/banner2.png) no-repeat top center;
+    background: var(--preto) url(../media2/banner2.png) no-repeat top center;
 }
 
 header #logo {
