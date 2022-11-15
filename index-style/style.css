@@ -130,10 +130,11 @@ nav a {
     font-weight: 600;
     color: #fff;
     padding: 1rem;
+    transition: .2s all;
 }
 
 nav a:hover {
-    border-bottom: 1px solid #fff;
+    font-weight: 900;
 }
 
 header #menu-mobile {
@@ -395,7 +396,7 @@ header .header-streamings .streamings i {
     margin: 2rem 0;
 }
 
-.members .member{
+.members .member {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -626,119 +627,120 @@ header {
     background: var(--preto) url(../media/banner2.png) no-repeat top center;
 }
 
-    header #logo {
-        width: 150px;
-    }
+header #logo {
+    width: 150px;
+}
 
-    header nav {
-        background-color: #0a0808bb;
-    }
+header nav {
+    background-color: #0a0808bb;
+}
 
-    
-    header #menu-mobile {
-        display: block;
-        position: absolute;
-        right: calc(1.5rem - 20px);
-        padding: 20px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-    }
 
-    header #menu-mobile i {
-        font-size: 1.5rem;
-        color: #fff;
-    }
-    
-    header .menu-desktop {
-        display: none;
-        position: absolute;
-        top: 80px;
-        width: 100%;
-        height: 70px;
-        right: 0;
-        background-color: #0a0808bb;
-    }
-    
-    header #second-item {
-        display: none;
-        position: absolute;
-        top: 150px;
-        width: 100%;
-        height: 70px;
-        right: 0;
-        background-color: #0a0808bb;
-    }
-    
-    nav #menu-desktop ul li {
-        padding: 1rem 0;
-    }
+header #menu-mobile {
+    display: block;
+    position: absolute;
+    right: calc(1.5rem - 20px);
+    padding: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 
-    nav ul.menu-desktop li a {
-        font-family: var(--corpo);
-        font-weight: 600;
-        color: #fff;
-        padding: 1rem 100% 1rem 1rem;
-    }
+header #menu-mobile i {
+    font-size: 1.5rem;
+    color: #fff;
+}
 
-    #nav.active .menu-desktop, 
-    #nav.active #second-item {
-        display: block;
-    }
-    
-    header .header-streamings {
-        flex-direction: column;
-        justify-content: space-between;
-        height: 200px;
-        padding: 1rem;
-    }
+header .menu-desktop {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 70px;
+    right: 0;
+    background-color: #0a0808bb;
+}
+
+header #second-item {
+    display: none;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    height: 70px;
+    right: 0;
+    background-color: #0a0808bb;
+}
+
+nav #menu-desktop ul li {
+    padding: 1rem 0;
+}
+
+nav ul.menu-desktop li a {
+    font-family: var(--corpo);
+    font-weight: 600;
+    color: #fff;
+    padding: 1rem 100% 1rem 1rem;
+}
+
+#nav.active .menu-desktop, 
+#nav.active #second-item {
+    display: block;
+    z-index: 2;
+}
+
+header .header-streamings {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    padding: 1rem;
+}
 /* ---------- Finishes Header ---------- */
-    
+
 /* ---------- Starts Sections ---------- */
-    .about img, .style img {
-            width: 100%;
-        }
-    
-        .influency img {
-            height: 35%;
-        }
+.about img, .style img {
+    width: 100%;
+}
 
-        .discography .swiper-slide .album-content {
-            text-align: center;
-        }
-    
-        .discography .swiper-slide .album-content img {
-            width: 90%;
-        }
+.influency img {
+    height: 35%;
+}
 
-        .discography .album-content .title h1 {
-            font-size: 1.8em;
-        }
+.discography .swiper-slide .album-content {
+    text-align: center;
+}
 
-        .discography .album-content .title h2 {
-            font-size: 1.3em;
-        }
-    
-        .videoclipes .videos {
-            height: 400px;
-        }
-        
-        .members .member img {
-            width: 300px;
-        }
-        
-        .members .member .name h1 {
-            font: 900 2.2em var(--titulo);
-        }
-        
-        .members .member .name h2 {
-            font: 600 1.8em var(--titulo);
-        }
-    /* ---------- Finishes Sections ---------- */
-    
-        footer h2 {
-            font: 800 1.6em var(--titulo);
-        }
+.discography .swiper-slide .album-content img {
+    width: 90%;
+}
+
+.discography .album-content .title h1 {
+    font-size: 1.8em;
+}
+
+.discography .album-content .title h2 {
+    font-size: 1.3em;
+}
+
+.videoclipes .videos {
+    height: 400px;
+}
+
+.members .member img {
+    width: 300px;
+}
+
+.members .member .name h1 {
+    font: 900 2.2em var(--titulo);
+}
+
+.members .member .name h2 {
+    font: 600 1.8em var(--titulo);
+}
+/* ---------- Finishes Sections ---------- */
+
+footer h2 {
+    font: 800 1.6em var(--titulo);
+}
 }
 
 

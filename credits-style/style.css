@@ -98,10 +98,11 @@ nav a {
     font-weight: 600;
     color: #fff;
     padding: 1rem;
+    transition: .2s all;
 }
 
 nav a:hover {
-    border-bottom: 1px solid #fff;
+    font-weight: 900;
 }
 
 header #menu-mobile {
